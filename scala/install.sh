@@ -8,16 +8,19 @@
 
 mkdir -p ~/bin
 
-mkdir -p tmp
-(
-    cd tmp;
-    curl -o scala.tgz -L http://downloads.lightbend.com/scala/2.10.6/scala-2.10.6.tgz;
-    tar -xzvf scala.tgz;
-    mv scala ~/bin;
+if [ ! -d ~/bin/scala ]; then
+    mkdir -p tmp
+    (
+        cd tmp;
+        curl -OL http://downloads.lightbend.com/scala/2.10.6/scala-2.10.6.tgz;
+        tar -xzvf scala-2.10.6.tgz;
 
-    cd ..
-    rm -rf tmp;
-)
+        mv scala-2.10.6 ~/bin/scala;
+
+        cd ..
+        rm -rf tmp;
+    )
+fi
 
 export SCALA_HOME=~/bin/scala
 export PATH=$PATH:$SCALA_HOME/bin
