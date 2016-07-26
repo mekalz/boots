@@ -26,3 +26,8 @@ Lock/unlock your mac automatically when you leave or return back
 
 ### RAR Extractor Star
 A tiny and good tool for zip/uzip .rar files
+
+---
+
+### Alternote
+A The third party client for Evernote, clean and pretty
