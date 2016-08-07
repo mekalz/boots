@@ -31,3 +31,8 @@ A tiny and good tool for zip/uzip .rar files
 
 ### Alternote
 A The third party client for Evernote, clean and pretty
+
+---
+
+### Fantastical 2
+A magic tool to manage reminders and calendars in one view, and what's more, add reminders and calendars in human nature languages(English only for current)
